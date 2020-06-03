@@ -6,6 +6,6 @@ import user from "./reducers/userReducer";
 
 
 //const store = createStore(combineReducers({ mathReducer, userReducer }), {}, applyMiddleware(myLogger, logger));
-export default createStore(combineReducers({ math, user }), {}, applyMiddleware( logger));
+export default createStore(combineReducers({math, user }), {}, applyMiddleware( logger));
 
 
