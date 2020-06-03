@@ -15,7 +15,7 @@ render() {
             <div className="row">
                 <div className="col-xs-10 col-xs-offset-1">
 
-                <Main changeUserName={()=>this.props.setNameLocal("Anna")} />
+                <Main changeUserName={()=>this.props.LocalsetNameMethod("Anna")} />
 
                     <User username={this.props.Localuser.name} />
 
@@ -36,7 +36,7 @@ const MapStateToProps =(state)=> {
 
 const MapDispatchToProps =(dispatch)=> {
     return{
-        setNameLocal: (name)=>{  //setName is a method which take name as a parameter
+        LocalsetNameMethod: (name)=>{  //setName is a method which take name as a parameter
             dispatch(setName(name));
 
         }
